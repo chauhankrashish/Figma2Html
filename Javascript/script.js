@@ -29,27 +29,5 @@ const createButton = document.getElementById('additionalDetails');
 
 
 
-    // ************** validation **************
 
-    function validateForm() {
-        var email = document.getElementById("email").value;
-        var password = document.getElementById("password").value;
-      
-        // Validate email address
-        if (!email.includes("@") || !email.includes(".")) {
-          alert("Please enter a valid email address.");
-          return false;
-        }
-      
-        // Validate password
-        if (password.length < 6) {
-          alert("Please enter a password with at least 6 characters.");
-          return false;
-        }
-      
-        return true;
-      }
-      
-      // Attach the validation function to the submit event of the form
-      document.getElementById("loginForm").addEventListener("submit", validateForm);
       
