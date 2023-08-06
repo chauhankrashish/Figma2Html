@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --white: #FFFFFF;
+    --pink: #FFEFEF;
+    --grey:#EDEDED;
+    --bg:#E5F8FE;
+
+}
+body{
+    background-color: var(--bg);
+}
+button{
+    cursor: pointer;
+}
+.container{
+    padding: 0 150px;
+    background-color: var(--white);
+}
+
+/* -------------  header  ---------------- */
+
+.header-div{
+    height: 105px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+}
+.header-div-left .logo{
+    width: 300px;
+    height: 81px;
+}
+.header-div-right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+.header-div-right ul li a{
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #575757;
+}
+
+/* -------------  hero  ---------------- */
+.hero{
+    position: relative;
+    width: 100%; 
+    height: 501px;  
+}
+.hero .hero-1{
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    z-index: -1;
+}
+.hero-1 img{
+    height: 100%;
+    width: 100%;
+}
+.hero-2 img{
+    height: 100%;
+    width: 100%;
+}
+.hero .hero-2{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 70%;
+}
+
+
+
+
+
+
+/* -------------  Registration-Box  ---------------- */
+
+.registration-box{
+    position: absolute;
+    right: 21%;
+    top: 75px;
+    width: 350px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.registration-box-details{
+    padding: 25px;
+    line-height: 25px;
+}
+
+.registration-box{
+    background-color: var(--white);
+}
+.registration-box-buttons{
+    width: 100%;
+    display: flex;
+}
+.registration-box-buttons button{
+    width: 50%;
+    font-size: 24px;
+    font-weight: 400;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+#signupButton{
+    background-color: var(--white);
+    border-top-left-radius: 5px;
+}
+#loginButton{
+    background-color: #EDEDED;
+    border-top-right-radius: 5px;
+}
+#createAccountButton{
+    width: 170px;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background: #FF79A2;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+
+}
+.details {
+    display: none;
+  }
+#additionalDetails{
+    background-color: var(--white);
+}
+#additionalDetails h4{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+#additionalDetails p{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+label{
+    font-weight: 300;
+}
+
+input {
+    border-bottom: 1px solid #000; 
+    transition: border-bottom 0.3s ease; 
+    outline: none;
+    width: 100%;
+    font-weight: 400;
+    padding: 5px 2px;
+    border: 1px solid grey;
+    background-color: transparent;
+}
+
+.registration-box-details .submit{
+    margin: 10px 0;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #FF79A2;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.register-with-ac{
+    display: flex;
+    gap: 5px;
+    outline: none;
+}
+.register-with-ac .fb,.google{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid gray;
+    font-size: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-radius: 3px;
+    padding: auto;
+}
+.register-with-ac img{
+    height: 15px;
+    width: 8px;
+}
+.register-with-ac .fb{
+    background-color: #3B5998;
+    color: var(--white);
+}
+.register-with-ac .fb a{
+    color: var(--white);
+}
+.register-with-ac .google img{
+    height: 8px;
+    width: 8px;
+}
+.or{
+    text-align: center;
+    margin: 12px 0;
+    font-weight: 400;
+    font-size: 18px;
+}
+.remember-me input{
+    width: auto;
+    margin-top: 10px;
+}
+.forget-password{
+    margin: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.forget-password button{
+    margin: 10px 0;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    background: #FF79A2;
+    border: none;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+/* -------------  footer  ---------------- */
+
+.footer{
+    height: auto;
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0 150px; */
+    margin: 50px 0;
+}
+.footer div{
+    line-height: 30px;
+}
+.footer-1 img{
+    width: 300px;
+    height: 81px;
+}
+.footer-2{
+    width: 200px;
+}
+.footer-4 .fb,.insta{
+    background: #65C8E8;    ;
+    padding: 8px 14px;
+    color: var(--white);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    margin-right: 10px;
+}
+.footer-4 .insta{
+    padding: 7px;
+}
+
+
+/* -------------  footer-last  ---------------- */
+.footer-bg{
+    background-color: var(--bg);
+}
+.footer-last{
+    height: auto;
+    width: 100%;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+.footer-last-2{
+    display: flex;
+    gap: 25px;
+}
+
+
+
