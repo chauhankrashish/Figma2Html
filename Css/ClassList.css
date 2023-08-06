@@ -116,12 +116,15 @@ option[value="Today"] {
     gap: 10px;
 }
 .video-details h4{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 450;
 }
-.video-details p{
-    font-size: 14px;
+.video-details p {
+    font-size: 12px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 4px;
 }
 .video-img{
     height: 100px;
@@ -148,4 +151,63 @@ option[value="Today"] {
     color: var(--white);    
     height: 30px;
     padding: 0 15px;
+}
+
+.load-more{
+    text-align: center;
+    margin-top: 10px;
+}
+.load-more button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    outline: none;
+    font-weight: 500;
+}
+/* **************** media query ******************** */
+@media (max-width:1268px){
+    .class-list-div {
+        width: 100%;
+        display: grid;
+        gap: 25px;
+    }
+    .class-list-div-1 {
+        width: 100%;
+    }
+    .class-list-div-2 {
+        width: 100%;
+    }
+}
+@media (max-width:1050px){
+    .video-containt{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width:888px){
+    .wrapper{
+        margin: 0;
+    }
+    .class-list-bg{
+        padding: 0 25px;
+    }
+}
+@media (max-width:540px){
+    .video-containt-left{
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .video-img{
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width:370px){
+    .video-details h4 {
+        font-size: 16px;
+        font-weight: 450;
+        margin-bottom: 10px;
+    }
 }

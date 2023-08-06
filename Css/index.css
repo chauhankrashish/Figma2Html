@@ -71,6 +71,7 @@ button{
 
 .nav>.nav-btn {
     display: none;
+    cursor: pointer;
 }
 
 .nav>.nav-links {
@@ -410,17 +411,17 @@ input {
         text-align: center;
         line-height: 25px;
     }
-    .nav{
-        padding: 0 10px;
-    }
+
     .footer{
      padding: 0 10px;
     } 
+    .footer-4{
+        text-align: center;
+    }
 }
 @media (max-width:672px){
-
-    .footer div {
-        line-height: 30px;
+    .nav{
+        padding: 0 10px;
     }
     .footer-last{
      padding: 0 10px;
@@ -437,6 +438,14 @@ input {
         transform: translateX(-50%);
    } 
 }
+
+@media (max-width:372px){
+    .nav-title a img {
+        width: 250px;
+        height: 71px;
+    }
+}
+
 
 
 
