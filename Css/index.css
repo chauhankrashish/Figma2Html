@@ -294,7 +294,7 @@ input {
     background-color: var(--bg);
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    /* padding: 0 150px; */
     margin: 50px 0;
 }
 .footer div{
@@ -331,7 +331,7 @@ input {
     background-color: var(--bg);
     display: flex;
     justify-content: space-between;
-    padding: 0 150px;
+    /* padding: 0 150px; */
     margin: 25px 0;
 }
 .footer-last-2{
