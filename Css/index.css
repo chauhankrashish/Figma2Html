@@ -188,9 +188,7 @@ button{
     display: none;
     /* line-height: 1.87; */
   }
-#signupDetails{
-    line-height: 1.87;
-}
+
 #additionalDetails{
     background-color: var(--white);
 }
