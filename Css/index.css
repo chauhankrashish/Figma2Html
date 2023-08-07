@@ -186,7 +186,11 @@ button{
 }
 .details {
     display: none;
+    /* line-height: 1.87; */
   }
+#signupDetails{
+    line-height: 1.87;
+}
 #additionalDetails{
     background-color: var(--white);
 }
@@ -214,6 +218,10 @@ input {
     border: 1px solid grey;
     background-color: transparent;
 }
+#loginUsername{
+    margin-bottom: 10px;
+}
+
 
 .registration-box-details .submit{
     margin: 10px 0;
@@ -241,7 +249,7 @@ input {
     padding: 0 10px;
     text-transform: uppercase;
     font-weight: 400;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: auto;
 }
 .register-with-ac img{
@@ -261,7 +269,7 @@ input {
 }
 .or{
     text-align: center;
-    margin: 12px 0;
+    margin: 8px 0;
     font-weight: 400;
     font-size: 18px;
 }
@@ -275,10 +283,13 @@ input {
     justify-content: space-between;
     align-items: center;
 }
+.forget-password a{
+    color: #1F8DB1;
+}
 .forget-password button{
     margin: 10px 0;
     height: 30px;
-    padding: 0 10px;
+    padding: 0 19px;
     border-radius: 5px;
     background: #FF79A2;
     border: none;
